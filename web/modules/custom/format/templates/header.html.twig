@@ -1,0 +1,21 @@
+
+{% set items = simplify_menu('main') %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light"           style="background-color: #BEB8B8">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+                {% for key,value in data %}
+      <img src={{ value }} alt="logo" width="50" height="50">
+      {% endfor %}
+      <div></div> <div></div>
+      </li>
+        {% for menu_item in items.menu_tree %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+        </li>
+  {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

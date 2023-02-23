@@ -1,0 +1,21 @@
+<?php
+
+function format_theme($existing, $type, $theme, $path) {
+    return [
+        'header_block'=>[
+            'template'=>'header',
+            'variables'=>[
+                'data' => [],
+            ]
+            ],
+            'footer_block'=>[
+                'template'=>'footer',
+                'variables'=>[
+                    'data' => [],
+                ]
+                ],
+            'content_block'=>[
+                    'template'=>'content',
+                    'variables'=>[]
+            ]];
+}

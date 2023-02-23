@@ -1,0 +1,4 @@
+name: Format
+type: module
+description: 'Format de ma page'
+core_version_requirement: ^8 || ^9
